@@ -1,0 +1,23 @@
+{
+  "keybossApp": {
+    "pwdPattern": {
+      "home": {
+        "title": "Pwd Patterns",
+        "createLabel": "Создать новый Pwd Pattern",
+        "createOrEditLabel": "Создать или отредактировать Pwd Pattern",
+        "notFound": "No Pwd Patterns found"
+      },
+      "created": "Новый Pwd Pattern создан с идентификатором {{ param }}",
+      "updated": "Pwd Pattern обновлен с идентификатором {{ param }}",
+      "deleted": "Pwd Pattern удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Pwd Pattern {{ id }}?"
+      },
+      "detail": {
+        "title": "Pwd Pattern"
+      },
+      "name": "Name",
+      "pwdPattern": "Pwd Pattern"
+    }
+  }
+}

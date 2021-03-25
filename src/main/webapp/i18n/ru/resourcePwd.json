@@ -1,0 +1,24 @@
+{
+  "keybossApp": {
+    "resourcePwd": {
+      "home": {
+        "title": "Resource Pwds",
+        "createLabel": "Создать новый Resource Pwd",
+        "createOrEditLabel": "Создать или отредактировать Resource Pwd",
+        "notFound": "No Resource Pwds found"
+      },
+      "created": "Новый Resource Pwd создан с идентификатором {{ param }}",
+      "updated": "Resource Pwd обновлен с идентификатором {{ param }}",
+      "deleted": "Resource Pwd удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Resource Pwd {{ id }}?"
+      },
+      "detail": {
+        "title": "Resource Pwd"
+      },
+      "pwd": "Pwd",
+      "createdAt": "Created At",
+      "resource": "Resource"
+    }
+  }
+}
