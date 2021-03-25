@@ -1,0 +1,23 @@
+{
+  "keybossApp": {
+    "pwdPattern": {
+      "home": {
+        "title": "Pwd Patterns",
+        "createLabel": "Create a new Pwd Pattern",
+        "createOrEditLabel": "Create or edit a Pwd Pattern",
+        "notFound": "No Pwd Patterns found"
+      },
+      "created": "A new Pwd Pattern is created with identifier {{ param }}",
+      "updated": "A Pwd Pattern is updated with identifier {{ param }}",
+      "deleted": "A Pwd Pattern is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Pwd Pattern {{ id }}?"
+      },
+      "detail": {
+        "title": "Pwd Pattern"
+      },
+      "name": "Name",
+      "pwdPattern": "Pwd Pattern"
+    }
+  }
+}

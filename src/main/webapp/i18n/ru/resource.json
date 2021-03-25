@@ -1,0 +1,28 @@
+{
+  "keybossApp": {
+    "resource": {
+      "home": {
+        "title": "Resources",
+        "createLabel": "Создать новый Resource",
+        "createOrEditLabel": "Создать или отредактировать Resource",
+        "notFound": "No Resources found"
+      },
+      "created": "Новый Resource создан с идентификатором {{ param }}",
+      "updated": "Resource обновлен с идентификатором {{ param }}",
+      "deleted": "Resource удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Resource {{ id }}?"
+      },
+      "detail": {
+        "title": "Resource"
+      },
+      "name": "Name",
+      "url": "Url",
+      "image": "Image",
+      "comment": "Comment",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "resourcePwd": "Resource Pwd"
+    }
+  }
+}

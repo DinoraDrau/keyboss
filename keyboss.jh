@@ -1,46 +1,33 @@
 
 entity User {
-	id Integer
 	userName String required
     externalId String required,
-    createdAt Date required,
-    updatedAt Date required
+    createdAt Instant required,
+    updatedAt Instant required
 }
 
 // an ignored comment
 /** not an ignored comment */
 entity Resource {
-	id Integer,
 	name String required,
 	url String,
     image String required,
     comment String,
-    createdAt Date required,
-    updatedAt Date required
+    createdAt Instant required,
+    updatedAt Instant required
 }
 
 entity ResourcePwd {
-	id Integer,
-    resourceId Integer required,
     pwd String required,
-    createdAt Date required
+    createdAt Instant required
 }
 
 entity PwdPattern {
-	id Integer,
-    userId Integer required,
 	name String required,
     pwdPattern String required
 }
 
 relationship OneToMany {
-	User to Resource{userId},
-	User to PwdPattern{userId},
-	Resource to ResourcePwd{resourceId}
+	Resource to ResourcePwd
 }
-// Use Data Transfer Objects (DTO)
-// dto * with mapstruct
-
-// Set service options to all except few
-service all with serviceImpl except User
 

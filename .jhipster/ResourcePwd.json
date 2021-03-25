@@ -1,0 +1,39 @@
+{
+  "name": "ResourcePwd",
+  "fields": [
+    {
+      "fieldName": "pwd",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "Instant",
+      "fieldValidateRules": [
+        "required"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "resource",
+      "otherEntityRelationshipName": "resourcePwd",
+      "relationshipName": "resource",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210325191532",
+  "entityTableName": "resource_pwd",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

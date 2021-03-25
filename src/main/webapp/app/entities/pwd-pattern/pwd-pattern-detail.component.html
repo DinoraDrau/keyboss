@@ -1,0 +1,34 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="pwdPattern">
+            <h2><span jhiTranslate="keybossApp.pwdPattern.detail.title">Pwd Pattern</span> {{ pwdPattern.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="keybossApp.pwdPattern.name">Name</span></dt>
+                <dd>
+                    <span>{{ pwdPattern.name }}</span>
+                </dd>
+                <dt><span jhiTranslate="keybossApp.pwdPattern.pwdPattern">Pwd Pattern</span></dt>
+                <dd>
+                    <span>{{ pwdPattern.pwdPattern }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/pwd-pattern', pwdPattern.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
